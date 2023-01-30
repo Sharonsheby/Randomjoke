@@ -16,12 +16,12 @@
 </head>
 
 <body>
-    <div class="container mt-5 p-1 rounded-2 text-center">
-        <div class="wrapper bg-yellow">
-            <div class="container w-50 bg-dark" id="displayData"></div>
+    <div class="container w-50 mt-5 p-1 rounded-2 text-center">
+        <!-- <div class="wrapper bg-yellow"> -->
+            <div class="card-body bg-dark" id="displayData"></div>
             <button onclick="search()" class="btn btn-warning " type="button"
                 style="color:black; font-size:25px; font-weight:bold"> Get A Random Joke</button>
-        </div>
+        <!-- </div> -->
     </div>
 </body>
 <script>
@@ -33,7 +33,7 @@
     function display(para) {
         quote = para.joke
         displayData.innerHTML = `
-            <div class="container">
+            <div class="card-body">
             <span style=" display: block;text-align: center;font-size: 50px; font-family: cursive;">&#128514;</span>
             <p class="text-center" style="color:white; font-size:30px;font-size:30px;">${quote}</p>
             </div>
